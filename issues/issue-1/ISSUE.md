@@ -82,21 +82,21 @@ Fortunately, for biotech startups, **it’s much simpler**. They don’t have pa
 
 For this case, I’ve looked at **three main numbers.** Scroll down to Page 8 of the [PDF](https://hotcopper.com.au/threads/ann-quarterly-activities-report-and-appendix-4c.7204300/) so you can follow with me.
 
-![Untitled](1%20Welcome!%203957db05f7f4432e84ac0b028852ef71/Untitled.png)
+![Untitled](/issues/issue-1/img-1.png)
 
 This is your opening cash bank balance. This report was for 2022 Q4, so the amount of money we could withdraw from the bank on 01 October 2022 was around **$2.4m**. Scrolling to the next page, we can see the ending bank balance is **$1.7m**.
 
-![Untitled](1%20Welcome!%203957db05f7f4432e84ac0b028852ef71/Untitled%201.png)
+![Untitled](/issues/issue-1/img-2.png)
 
 Well, we went from **$2.4m** to **$1.7m**, that’s only **700k** down for the quarter, not bad! That’s until we go to the next page and look at…
 
-![Untitled](1%20Welcome!%203957db05f7f4432e84ac0b028852ef71/Untitled%202.png)
+![Untitled](/issues/issue-1/img-3.png)
 
 Ah. We got a **loan for almost $1m**. So really, our ending bank balance **should be around $0.7m**, indicating a **spend of $1.7m for the quarter,** but with our quick loan top-up, we’re **sitting at $1.7m.**
 
 The estimated quarters remaining is calculated and summarised into one neat number here (although I think the minus (-) sign is a typo):
 
-![Untitled](1%20Welcome!%203957db05f7f4432e84ac0b028852ef71/Untitled%203.png)
+![Untitled](/issues/issue-1/img-4.png)
 
 Although here is where we need to turn on our brains and start **putting together different pieces of information**.
 
