@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>TBC Bio</title>
+  <script>
+    function init() {
+      const $form = document.querySelector('#subscribe')
+      const $msg = document.querySelector('#subbed')
+
+      $form.addEventListener('submit', async e => {
+        e.preventDefault()
+        const email = document.querySelector('#email')
+        const res = await window.fetch(`/subscribe?email=${email.textContent.trim()}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        const json = await res.json()
+        $msg.classList.remove('hidden')
+      })
+    }
+
+    document.addEventListener('DOMContentLoaded', init)
+  </script>
 </head>
+
 <body>
-  Homepage coming soon! Check <a href="/issue-1.html">issue 1 here</a>!
+  <div class="flex justify-center m-16">
+    <div class="max-w-md">
+      <h1 class="text-4xl text-center">
+        TBC Bio News
+      </h1>
+
+      <p class="my-2">
+        Welcome to TBC Bio, where our mission is to bring innovative biotech opportunities to talented science
+        enthusiasts!
+      </p>
+
+      <p class="my-2">
+        Sign up below for our newsletter, which generally comes out on a weekly basis.
+        You can <a href="/issue-1.html" class="border-b-2 border-b-teal-500">read the latest issue here</a>!
+      </p>
+
+      <form id="subscribe">
+        <input id="email" class="p-2 h-10 my-2 rounded w-full border border-teal-500" placeholder="Email...">
+        <button type="submit" class="h-10 bg-teal-500 p-2 w-full text-white">Submit</button>
+      </form>
+
+      <p id="subbed" class="my-2 bg-sky-100 p-2 rounded border border-sky-300 hidden">
+        Thanks for subscribing. It won't be long until our next issue.
+        Until then, you can <a href="/issue-1.html" class="border-b-2 border-b-teal-500">read the previous one here</a>.
+      </p>
+    </div>
+  </div>
 </body>
+
 </html>
