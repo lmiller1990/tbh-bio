@@ -14,8 +14,8 @@
 
       $form.addEventListener('submit', async e => {
         e.preventDefault()
-        const email = document.querySelector('#email')
-        const res = await window.fetch(`/subscribe?email=${email.textContent.trim()}`, {
+        const $email = document.querySelector('#email')
+        const res = await window.fetch(`/subscribe?email=${$email.value.trim()}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -53,37 +53,38 @@
       </form>
 
       <p id="subbed" class="my-4 bg-sky-100 p-2 rounded border border-sky-300 hidden">
-        Thanks for subscribing. It won't be long until our next issue.
+        Thanks for subscribing! It won't be long until our next issue.
         Until then, you can <a href="/issue-1.html" class="border-b-2 border-b-teal-500">read the previous one here</a>.
       </p>
 
       <section class="text-gray-500 italic mt-10">
 
-      <h2 class="text-2xl text-center mt-12">
-        Who are we?
-      </h2>
+        <h2 class="text-2xl text-center mt-12">
+          Who are we?
+        </h2>
 
-      <p class="my-4">
-        TBC Bio is a startup founded by three friends who were passionate about exploring business, personal
-        development, communication, and management skills.
-        Our goal is to join the movement in solving real, global issues. 
-      </p>
+        <p class="my-4">
+          TBC Bio is a startup founded by three friends who were passionate about exploring business, personal
+          development, communication, and management skills.
+          Our goal is to join the movement in solving real, global issues.
+        </p>
 
-      <p class="my-4">
-        Got a question, comment, or suggestion?
-      </p>
-      <p>
-        <span>
-         Email: <a href="mailto:tbcbionews@gmail.com" class="border-b-2 border-b-teal-500">tbcbionews@gmail.com</a>
-        </span>
-      </p>
+        <p class="my-4">
+          Got a question, comment, or suggestion?
+        </p>
+        <p>
+          <span>
+            Email: <a href="mailto:tbcbionews@gmail.com" class="border-b-2 border-b-teal-500">tbcbionews@gmail.com</a>
+          </span>
+        </p>
 
-      <p class="my-4">
-        LinkedIn:
-        <a class="border-b-2 border-b-teal-500" href="http://www.linkedin.com/in/thienddinh">Thien Dinh</a>,
-        <a class="border-b-2 border-b-teal-500" href="https://www.linkedin.com/in/lachlan-miller-047736173">Lachlan Miller</a>,
-        <a class="border-b-2 border-b-teal-500" href="https://www.linkedin.com/in/jwai7/">Jonathan Wai</a>.
-      </p>
+        <p class="my-4">
+          LinkedIn:
+          <a class="border-b-2 border-b-teal-500" href="http://www.linkedin.com/in/thienddinh">Thien Dinh</a>,
+          <a class="border-b-2 border-b-teal-500" href="https://www.linkedin.com/in/lachlan-miller-047736173">Lachlan
+            Miller</a>,
+          <a class="border-b-2 border-b-teal-500" href="https://www.linkedin.com/in/jwai7/">Jonathan Wai</a>.
+        </p>
 
       </section>
     </div>
